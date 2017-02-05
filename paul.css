@@ -1,0 +1,200 @@
+/*
+ * Responsive Grid
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+}
+button {
+    border: none;
+    padding: 8px 24px;
+    border-radius: 2px;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 12px 0 rgba(0,0,0,0.19)
+}
+.capital {
+    text-transform: uppercase;
+}
+button:active {
+    box-shadow: none;
+}
+.circle {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+    padding:0;
+}
+
+.floating {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.floating:hover {
+    box-shadow:0 12px 20px 0 rgba(0,0,0,0.2),0 8px 24px 0 rgba(0,0,0,0.19) 
+}
+.floating:active {
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);
+}
+/* for small screens */
+@media only screen and (max-width: 600px) {
+    .hide-small {display: none}
+
+    .s1 {width: 8.33%;}
+    .s2 {width: 16.66%;}
+    .s3 {width: 25%;}
+    .s4 {width: 33.33%;}
+    .s5 {width: 41.66%;}
+    .s6 {width: 50%;}
+    .s7 {width: 58.33%;}
+    .s8 {width: 66.66%;}
+    .s9 {width: 75%;}
+    .s10 {width: 83.33%;}
+    .s11 {width: 91.66%;}
+    .s12 {width: 100%;}
+}
+/* for medium screens */
+@media only screen and (min-width: 600px) {
+ul.navbar li {
+    float: left;
+}
+    .hide-medium {display: none}
+
+    .m1 {width: 8.33%;}
+    .m2 {width: 16.66%;}
+    .m3 {width: 25%;}
+    .m4 {width: 33.33%;}
+    .m5 {width: 41.66%;}
+    .m6 {width: 50%;}
+    .m7 {width: 58.33%;}
+    .m8 {width: 66.66%;}
+    .m9 {width: 75%;}
+    .m10 {width: 83.33%;}
+    .m11 {width: 91.66%;}
+    .m12 {width: 100%;}
+}
+/* For large screens */
+@media only screen and (min-width: 768px) {
+ul.navbar li {
+    float: left;
+}
+    .hide-large {display: none}
+
+    .l1 {width: 8.33%;}
+    .l2 {width: 16.66%;}
+    .l3 {width: 25%;}
+    .l4 {width: 33.33%;}
+    .l5 {width: 41.66%;}
+    .l6 {width: 50%;}
+    .l7 {width: 58.33%;}
+    .l8 {width: 66.66%;}
+    .l9 {width: 75%;}
+    .l10 {width: 83.33%;}
+    .l11 {width: 91.66%;}
+    .l12 {width: 100%;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar + .row{
+    margin-top: 50px;
+}
+
+.main {
+    margin: 128px 32px 48px 32px;
+}
+
+body {
+    font-family: Roboto, Verdana, sans-serif;
+    line-height: 1.5;
+}
+h1 {font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 16px 8px 16px 8px;
+}
+
+.card img {
+    display: block;
+}
+
+.padded {
+    padding: 0.01em 16px;
+}
+
+/*
+ * Navbar
+ */
+ul.navbar {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   background-color: black;
+   color: white;
+}
+ul.navbar li:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+ul.navbar li {
+    transition: background-color 0.2s;
+}
+
+ul.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+table {
+    border: 1px solid #EEEEEE;
+    border-collapse: collapse;
+}
+th {
+    padding: 8px;
+    text-align: left;
+}
+td {
+    padding: 0 8px 0 8px
+}
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+#9E9E9E
