@@ -1,14 +1,16 @@
-/*
- * Responsive Grid
- */
-
-* {
+* { 
     box-sizing: border-box;
 }
 
 .col {
     float: left;
 }
+
+
+/*
+ * Buttons
+ */
+
 button {
     border: none;
     padding: 8px 24px;
@@ -17,15 +19,16 @@ button {
     outline: none;
     cursor: pointer;
 }
+
 button:hover {
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 12px 0 rgba(0,0,0,0.19)
 }
-.capital {
-    text-transform: uppercase;
-}
+
 button:active {
     box-shadow: none;
 }
+
+
 .circle {
     width: 56px;
     height: 56px;
@@ -49,6 +52,12 @@ button:active {
 .floating:active {
     box-shadow:0 2px 2px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);
 }
+
+
+/*
+ * Responsive
+ */
+
 /* for small screens */
 @media only screen and (max-width: 600px) {
     .hide-small {display: none}
@@ -66,11 +75,14 @@ button:active {
     .s11 {width: 91.66%;}
     .s12 {width: 100%;}
 }
+
 /* for medium screens */
 @media only screen and (min-width: 600px) {
-ul.navbar li {
-    float: left;
-}
+
+    ul.navbar li {
+        float: left;
+    }
+
     .hide-medium {display: none}
 
     .m1 {width: 8.33%;}
@@ -86,11 +98,14 @@ ul.navbar li {
     .m11 {width: 91.66%;}
     .m12 {width: 100%;}
 }
+
 /* For large screens */
 @media only screen and (min-width: 768px) {
-ul.navbar li {
-    float: left;
-}
+    
+    ul.navbar li {
+        float: left;
+    }
+
     .hide-large {display: none}
 
     .l1 {width: 8.33%;}
@@ -113,7 +128,7 @@ ul.navbar li {
     display: table;
 }
 
-.navbar + .row{
+.navbar + .row {
     margin-top: 50px;
 }
 
@@ -121,20 +136,31 @@ ul.navbar li {
     margin: 128px 32px 48px 32px;
 }
 
+
+/*
+ * Text
+ */
+
 body {
     font-family: Roboto, Verdana, sans-serif;
     line-height: 1.5;
 }
+
 h1 {font-size:36px}
-h2{font-size:30px}
-h3{font-size:24px}
-h4{font-size:20px}
-h5{font-size:18px}
-h6{font-size:16px}
+h2 {font-size:30px}
+h3 {font-size:24px}
+h4 {font-size:20px}
+h5 {font-size:18px}
+h6 {font-size:16px}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     margin: 10px 0;
     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.capital {
+    text-transform: uppercase;
 }
 
 .card {
@@ -150,9 +176,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.01em 16px;
 }
 
+
 /*
  * Navbar
  */
+
 ul.navbar {
    list-style-type: none; 
    margin: 0;
@@ -166,6 +194,7 @@ ul.navbar {
    background-color: black;
    color: white;
 }
+
 ul.navbar li:hover {
     background-color: white;
     color: black;
@@ -183,18 +212,87 @@ ul.navbar li a {
     text-decoration: none;
     color: inherit;
 }
+
+
+/*
+ * Tables
+ */
+
 table {
     border: 1px solid #EEEEEE;
     border-collapse: collapse;
 }
+
 th {
     padding: 8px;
     text-align: left;
 }
+
 td {
     padding: 0 8px 0 8px
 }
+
 tr:nth-child(even) {
     background-color: #EEEEEE;
 }
-#9E9E9E
+
+
+/*
+ * Colors
+ */
+
+*[class*="hover-"] {
+    transition: background-color 0.2s;
+}
+
+.red, .hover-red:hover { color: #FFF !important; background-color: #F44336 !important}
+.pink, .hover-pink:hover { color: #FFF !important; background-color: #E91E63 !important}
+.fuschia, .hover-fuschia:hover { color: #FFF !important; background-color: #880E4F !important}
+.purple, .hover-purple:hover { color: #FFF !important; background-color: #9C27B0 !important}
+.dark-purple, .hover-dark-purple:hover { color: #FFF !important; background-color: #673AB7 !important}
+.blue, .hover-blue:hover { color: #FFF !important; background-color: #3F51B5 !important}
+.light-blue, .hover-light-blue:hover { color: #FFF !important; background-color: #2196F3 !important}
+.cyan, .hover-cyan:hover { color: #000 !important; background-color: #00BCD4 !important}
+.teal, .hover-teal:hover { color: #FFF !important; background-color: #009688 !important}
+.green, .hover-green:hover { color: #000 !important; background-color: #4CAF50 !important}
+.dark-green, .hover-dark-green:hover { color: #FFF !important; background-color: #1B5E20 !important}
+.light-green, .hover-light-green:hover { color: #000 !important; background-color: #8BC34A !important}
+.yellow, .hover-yellow:hover { color: #000 !important; background-color: #FFEB3B !important}
+.amber, .hover-amber:hover { color: #000 !important; background-color: #FFC107 !important}
+.light-orange, .hover-light-orange:hover { color: #000 !important; background-color: #FF9800 !important}
+.orange, .hover-orange:hover { color: #FFF !important; background-color: #FF5722 !important}
+.brown, .hover-brown:hover { color: #FFF !important; background-color: #795548 !important}
+.gray, .hover-gray:hover { color: #000 !important; background-color: #9E9E9E !important}
+.dark-gray, .hover-dark-gray:hover { color: #FFF !important; background-color: #424242 !important}
+.light-gray, .hover-light-gray:hover { color: #000 !important; background-color: #EEEEEE !important}
+.charcoal, .hover-charcoal:hover { color: #FFF !important; background-color: #212121 !important}
+.blue-gray, .hover-blue-gray:hover { color: #FFF !important; background-color: #607D8B !important}
+.dark-blue-gray, .hover-dark-blue-gray:hover { color: #FFF !important; background-color: #263238 !important}
+.black, .hover-black:hover { color: #FFF !important; background-color: #000000 !important}
+.white, .hover-white:hover { color: #000 !important; background-color: #FFFFFF !important}
+
+.red-text, .hover-red-text:hover { color: #F44336 !important}
+.pink-text, .hover-pink-text:hover { color: #E91E63 !important}
+.fuschia-text, .hover-fuschia-text:hover { color: #880E4F !important}
+.purple-text, .hover-purple-text:hover { color: #9C27B0 !important}
+.dark-purple-text, .hover-dark-purple-text:hover { color: #673AB7 !important}
+.blue-text, .hover-blue-text:hover { color: #3F51B5 !important}
+.light-blue-text, .hover-light-blue-text:hover { color: #2196F3 !important}
+.cyan-text, .hover-cyan-text:hover { color: #00BCD4 !important}
+.teal-text, .hover-teal-text:hover { color: #009688 !important}
+.green-text, .hover-green-text:hover { color: #4CAF50 !important}
+.dark-green-text, .hover-dark-green-text:hover { color: #1B5E20 !important}
+.light-green-text, .hover-light-green-text:hover { color: #8BC34A !important}
+.yellow-text, .hover-yellow-text:hover { color: #FFEB3B !important}
+.amber-text, .hover-amber-text:hover { color: #FFC107 !important}
+.light-orange-text, .hover-light-orange-text:hover { color: #FF9800 !important}
+.orange-text, .hover-orange-text:hover { color: #FF5722 !important}
+.brown-text, .hover-brown-text:hover { color: #795548 !important}
+.gray-text, .hover-gray-text:hover { color: #9E9E9E !important}
+.dark-gray-text, .hover-dark-gray-text:hover { color: #424242 !important}
+.light-gray-text, .hover-light-gray-text:hover { color: #EEEEEE !important}
+.charcoal-text, .hover-charcoal-text:hover { color: #212121 !important}
+.blue-gray-text, .hover-blue-gray-text:hover { color: #607D8B !important}
+.dark-blue-gray-text, .hover-dark-blue-gray-text:hover { color: #263238 !important}
+.black-text, .hover-black-text:hover { color: #000000 !important}
+.white-text, .hover-white-text:hover { color: #FFFFFF !important}
